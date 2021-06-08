@@ -129,23 +129,21 @@ h1, h2, h3, h4, p, figure {
     padding: 30px 20px;
     font-size: 16px;
     color: gray;
-    background-color: whitesmoke; 
+    background-color: #fbfbfd; 
 }
 .about h2 {
     font-weight: 900;
     font-size: 30px;
     color: rgb(43, 40, 40);
-    border-top: 3px dotted gray;
-    border-bottom: 3px dotted gray;
     padding: 5px 0;   
 }
 .about-body-text p {
     padding-top: 16px;
 }
 
-.about-body-text {
+/* .about-body-text {
     padding-top: 20px;
-}
+} */
 
 .about-grid {
     display: flex;
@@ -200,6 +198,7 @@ h1, h2, h3, h4, p, figure {
 }
 .product-body-group {
     padding-bottom: 20px;
+    color: gray;
 }
 
 /* -------------------------ROW-3 */
@@ -331,7 +330,7 @@ h1, h2, h3, h4, p, figure {
 }
 .logo img {
     height: auto;
-    width: 180px;
+    width: 250px;
 }
 .footer-contact {padding-top: 10px;}
 .footer-contact a {display: inline-flex;}
