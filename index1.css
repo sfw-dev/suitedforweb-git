@@ -1,0 +1,401 @@
+html {
+	font-size: 10px;
+	line-height: 1.6;
+	width: 100%;
+	height: 100%;	
+    box-sizing: border-box;
+}
+/*margin auto 0 removes default css that come with some browsers*/
+body {
+  background-color: #FBFBFD;
+  margin: auto 0;
+  color: #2B2A3B;
+  font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, p {
+	margin: 0;
+}
+
+.maxsize {
+    max-width: 1100px;
+    align-self: center;
+    margin: auto;
+}
+
+/* ---------------------------------------NAV */
+/* NEW NAV SOLVED */
+.nav-btn {
+    background-color: rgb(43, 40, 40);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    width: auto;
+}
+.topnav {
+    background-color: #fbfbfd;
+    
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; 
+}
+.topnav a:hover {
+    background-color: #eaebf3fb;
+    color: black;
+}
+
+/* .topnav a.active {
+  background-color: #051f3a;
+  color: white;
+} */
+.topnav .icon {
+    display: none;
+  }
+
+.active img {
+    height: auto;
+    width: 200px;
+}
+
+.flex img {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.mobile-nav {
+    display: flex;
+    align-items: center; 
+}
+
+.nav-logo {
+    margin: 0;
+}
+.push {
+    margin-left: auto;
+}
+  /* When the screen is less than 960 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width:  1023px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 1023px) {
+    /* .topnav.responsive {position: relative;} */
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .mobile-nav {
+        display: block;
+    }
+  }
+/* -----------------------------------SECTION */
+/* -----------------------COVER */
+.cover {
+    display: block;
+    background-color: rgb(43, 40, 40);
+    color: white;
+    padding: 80px 20px;
+    margin-top: 69px; 
+    /* background-image: url("Abstract\ Background\ V3_1.svg"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Abstract\ Background\ V3_1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cover h1 {
+    font-size: 40px; 
+}
+
+/* ------------------------ROW-1 */
+.about {
+    padding: 50px 20px;
+    font-size: 16px;
+    color: gray; 
+    
+   
+}
+.about-text {
+    padding-right: 10px;
+    /* need another mq to style small vs med mobile */
+}
+
+.about h2 {
+    font-weight: 900;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: rgb(43, 40, 40);
+}
+.about-grid {display: flex; }
+.about-image {display: none;}
+/*Small devices (portrait tablets and large phones, 600px and up) */
+/* ------------------------ROW-2 */
+.offer {
+    background-color:  rgb(43, 40, 40);
+    /* background-image: url("Abstract\ Background\ V3_1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+   
+    font-weight: 600;
+    color: white;
+    padding: 40px 20px;
+}
+.offer h3 {
+    font-size: 30px;
+}
+.offer-sub p {
+    font-size: 18px;
+    color: gray;
+}
+/* -------------------------ROW-3 */
+.row3 {
+    background-color: whitesmoke;
+    padding: 20px 0;
+}
+.row3-container {
+    display: block;
+    margin: 30px 20px;
+    padding-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #FBFBFD;  
+}
+.row3-design-image {margin: 0;}
+.row3-design-image img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border-radius: 6px 6px 0px 0px;
+    
+}  
+.row3-text {padding: 0 20px;}
+.title {
+    font-size: 24px;
+    font-weight: 800;
+    padding: 10px 0 5px 0;
+}
+.subtitle {
+    font-size: 16px;
+    padding-bottom: 20px;
+    color: gray;
+}
+.btn-1 {
+    background-color: rgb(43, 40, 40);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 100%;
+    transition: 0.2s;
+}
+.btn-move {
+    margin: 0 20px;
+}
+/* ---------------------------------------------FOOTER-SECTION */
+
+.footer-section {
+    background-color: rgb(43, 40, 40) ;
+    border-top: 5px solid black;
+    padding: 50px 0 10px 0; 
+}
+.footer-container {
+    display: block;
+    padding-bottom: 30px;
+}
+.footer-col {
+    padding: 20px;
+}
+.footer-col a {
+    display: block;
+    text-decoration: none;
+	color: gray;
+	font-size: 14px;
+    padding: 5px 0;	
+}
+.logo {
+    margin: 0;
+    /* border-bottom: 1px solid gray; */
+}
+.logo img {
+    height: auto;
+    width: 250px;
+}
+.footer-contact {padding-top: 10px;}
+.footer-contact a {display: inline-flex;}
+.footer-contact img {
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+    display: inline-flex;  
+}
+.foot-title {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+.foot-items {padding-top: 10px;}
+footer {
+    display: block;
+	color: gray;
+	font-size: 12px;
+	background-color: rgb(43, 40, 40) ;
+    padding: 20px 0 0 0;   
+}
+.footer-items {
+    border-top: 1px solid grey;
+    padding-top: 20px;
+}
+.footer-items p {
+    padding-left: 20px ;
+}
+
+
+  /* ---------------------------------------------------------tablets and large screen phones */
+  @media screen and (min-width:  600px) {
+    .active img { height: auto; width: 250px;}
+    .cover {padding: 180px 20px;}
+    .cover h1 {font-size: 60px;}
+    .about h2 {font-size: 40px;}
+    .about {font-size: 20px;}
+    .offer h3 {font-size: 40px;}
+    .offer-sub p {font-size: 20px;}
+    .title {font-size: 30px;}
+    .subtitle {font-size: 20px;}
+    .btn-1 {font-size: 20px;}
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+
+ /* ---------------------------------------------------------desktop devices */
+@media screen and (min-width:  1023px) {
+    .about {
+        
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("brick-2000.jpg");
+        background-attachment: fixed; */
+        background-image:  url("idea.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .about h2 {
+       
+        padding-bottom: 20px;
+    }
+    .about-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 100px 0;
+    }
+    .about-text {
+        grid-column: 1;
+        align-self: center; 
+    }
+    .about-image {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    .about-grid-image {
+        grid-column: 2;
+        align-self: center;  
+    }
+    .offer {padding: 50px 20px;}
+    .offer h3 {font-size: 50px;}
+    .offer-sub p {font-size: 24px;}
+    .row3{ padding: 10px 0;}
+    .row3-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto;
+        margin: 20px auto;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .row3-design-image {
+        grid-column: 2;
+        grid-row: 1/3;   
+    }
+    .row3-design-image img {
+        height: auto;
+        width: 100%;
+        border-radius: 0;
+        transition: 0.2s;
+    }
+    .row3-design-image img:hover {
+        opacity: 0.7;
+        width: 102%;
+    }  
+    .row3-text {
+        grid-column: 1;
+        grid-row: 1;
+        /* align-self: center;  */
+        background-color: #FBFBFD;
+        padding: 20px;
+        margin: 20px;  
+    }
+    .title {font-size: 40px;}
+    
+    
+    .btn-1 {
+        background-color: #FBFBFD;
+        color: gray;
+        font-size: 18px;
+        width: auto;
+        transition: 0.2s;
+    }
+    .btn-move {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: flex-end;
+        margin-bottom: 20px;
+           
+    }
+    .btn-move button:hover {
+        font-size: 20px;
+        color: rgb(43, 40, 40);
+        margin-left: 10px;
+    }
+    .arrow {
+        border: solid gray;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 5px;
+    }
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+   
+}
+
+
+

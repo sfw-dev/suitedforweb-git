@@ -1,0 +1,385 @@
+html {
+	font-size: 10px;
+	line-height: 1.6;
+	width: 100%;
+	height: 100%;	
+    box-sizing: border-box;
+}
+/*margin auto 0 removes default css that come with some browsers*/
+body {
+  background-color: #FBFBFD;
+  margin: auto 0;
+  color: #2B2A3B;
+  font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, p, figure {
+	margin: 0;
+}
+
+.maxsize {
+    max-width: 1100px;
+    align-self: center;
+    margin: auto;
+}
+/* ---------------------------------------NAV */
+/* NEW NAV SOLVED */
+.nav-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    width: auto;
+}
+.topnav {
+    background-color: #fbfbfd;
+    border-bottom: 1px solid grey;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; 
+}
+.topnav a:hover {
+    background-color: #eaebf3fb;
+    color: black;
+}
+/* .topnav a.active {
+  background-color: #051f3a;
+  color: white;
+} */
+.topnav .icon {
+    display: none;
+}
+
+.active img {
+    height: auto;
+    width: 200px;
+}
+.flex img {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+.mobile-nav {
+    display: flex;
+    align-items: center; 
+}
+.nav-logo {
+    margin: 0;
+}
+.push {
+    margin-left: auto;
+}
+  /* When the screen is less than 960 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width:  1018px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  } 
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 1018px) {
+    /* .topnav.responsive {position: relative;} */
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .mobile-nav {
+        display: block;
+    }
+  }
+
+/* -----------------------------------SECTION */
+
+/* -----------------------COVER */
+.cover {
+    display: block;
+    color: white;
+    padding: 150px 20px;
+    margin-top: 69px; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("splash-2000-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.cover h1 {
+    font-size: 40px;
+    border-left: 5px solid white;
+    padding-left: 20px;  
+}
+
+/* ------------------------ROW-1 */
+.about {
+    padding: 30px 20px;
+    font-size: 16px;
+    color: gray;
+    background-color: whitesmoke; 
+}
+.about h2 {
+    font-weight: 900;
+    font-size: 30px;
+    color: rgb(43, 40, 40);
+    border-top: 3px dotted gray;
+    border-bottom: 3px dotted gray;
+    padding: 5px 0;   
+}
+.about-body-text p {
+    padding-top: 16px;
+}
+
+.about-body-text {
+    padding-top: 20px;
+}
+
+.about-grid {
+    display: flex;
+    flex-direction: column;
+}
+.about-image {
+    display: none;
+}
+.btn-about {
+    padding-top: 20px;
+}
+/* offer */
+.offer {
+    background-color:  rgb(43, 40, 40);
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    padding: 40px 20px;
+}
+.offer-sub p {
+    font-size: 20px;
+    
+}
+
+
+/* ----------------------------------------------------Product Section */
+
+.product-container {
+    display: block;
+    padding: 30px 20px;
+    border: 1px solid white;
+    background-color: white;
+    border: 1px solid #eaebf3fb;
+}
+.product-title-group img {
+    height: auto;
+    width: 50px;
+}
+.product-image {
+    display: none;
+}
+
+.product-title-group p {
+    font-size: 24px;
+    font-weight: 800;
+    padding-bottom: 10px;
+}
+.product-body-group li, p {
+    font-size: 16px;   
+}
+.product-body-group p {
+    padding: 0px 0 10px 0;
+}
+.product-body-group {
+    padding-bottom: 20px;
+}
+
+
+/* -------------------------ROW-3 */
+.btn-1 {
+    background-color: rgb(43, 40, 40);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 3px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* ---------------------------------------------------------tablets and large screen phones */
+@media screen and (min-width:  600px) {
+    .active img { height: auto; width: 250px;}
+    .cover {padding: 180px 20px;}
+    .cover h1 {font-size: 60px;}
+    .about h2 {font-size: 40px;}
+    .about p {font-size: 20px;}
+    .offer {font-size: 40px;}
+    .btn-1 {font-size: 20px;}
+}
+
+/* ---------------------------------------------------------tablets and large screen phones */
+@media screen and (min-width:  1150px) {
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        justify-content: center;
+    }
+    .about-text {
+        grid-column: 1/4;
+        grid-row: 2;
+        align-self: flex-end;
+       
+        padding: 0 20px 20px 0;
+       
+    }
+    .about-body-text {
+        grid-column: 1;
+        grid-row: 3;
+        padding: 0;
+        padding: 0 20px 20px 0;
+    }
+    .about-body-text p {
+        padding: 0;
+    }
+
+    .about-image {
+        display: block;
+        grid-column: 2;
+        grid-row: 1/5;
+        align-self: flex-end;
+        padding-bottom: 20px;
+    }
+    .btn-about {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .about-grid img {
+        height: auto;
+        width: 100%; 
+    }
+    .about {font-size: 18px;}
+    .about h2 {
+        font-size: 40px;
+        border: none;
+    }
+
+    
+    .title {font-size: 40px;}
+    .body-text {font-size: 20px;}
+
+
+
+    /* Offer */
+    .offer {
+        font-size: 50px;
+        padding: 50px 20px;
+    }
+    .offer-sub p {font-size: 24px;}
+
+    /* ------------------------ROW-2 */
+    .product-area {
+        padding: 20px 0;
+        
+    }
+    .product-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        gap: 10px;
+       
+    }
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        margin: 0px 0;   
+    }
+    .product-title-group {
+        display: block;
+    }
+   
+}
+/* ---------------------------------------------FOOTER-SECTION */
+
+.footer-section {
+    background-color: rgb(43, 40, 40) ;
+    border-top: 5px solid black;
+    padding: 50px 0 10px 0; 
+}
+.footer-container {
+    display: block;
+    padding-bottom: 30px;
+}
+.footer-col {
+    padding: 20px;
+}
+.footer-col a {
+    display: block;
+    text-decoration: none;
+	color: gray;
+	font-size: 14px;
+    padding: 5px 0;	
+}
+.logo {
+    margin: 0;
+    border-bottom: 1px solid gray;
+}
+.logo img {
+    height: auto;
+    width: 180px;
+}
+.footer-contact {padding-top: 10px;}
+.footer-contact a {display: inline-flex;}
+.footer-contact img {
+    width: 20px;
+    height: 20px;
+    padding-left: 10px;
+    display: inline-flex;  
+}
+.foot-title {
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+.foot-items {padding-top: 10px;}
+footer {
+    display: block;
+	color: gray;
+	font-size: 12px;
+	background-color: rgb(43, 40, 40) ;
+    padding: 20px 0 0 0;   
+}
+.footer-items {
+    border-top: 1px solid grey;
+    padding-top: 20px;
+}
+.footer-items p {
+    padding-left: 20px ;
+}
+
+
+
+ 
+@media only screen and (min-width: 800px) {
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    /* .footer-contact img {
+        display: inline-flex;
+    } */
+}
+
+
