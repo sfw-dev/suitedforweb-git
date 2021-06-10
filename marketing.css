@@ -21,6 +21,7 @@ h1, h2, h3, h4, p, figure {
     align-self: center;
     margin: auto;
 }
+
 /* ---------------------------------------NAV */
 /* NEW NAV SOLVED */
 .nav-btn {
@@ -111,7 +112,7 @@ h1, h2, h3, h4, p, figure {
 .cover {
     display: block;
     color: white;
-    padding: 150px 20px;
+    padding: 100px 20px;
     margin-top: 69px; 
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("livestream-2000.jpg");
     background-repeat: no-repeat;
@@ -173,7 +174,6 @@ h1, h2, h3, h4, p, figure {
 .product-container {
     display: block;
     padding: 30px 20px;
-    border: 1px solid white;
     background-color: white;
     border: 1px solid #eaebf3fb;
 }
@@ -214,7 +214,7 @@ h1, h2, h3, h4, p, figure {
 /* ---------------------------------------------------------tablets and large screen phones */
 @media screen and (min-width:  600px) {
     .active img { height: auto; width: 250px;}
-    .cover {padding: 180px 20px;}
+    .cover {padding: 200px 20px;}
     .cover h1 {font-size: 60px;}
     .about h2 {font-size: 40px;}
     .about p {font-size: 20px;}
@@ -234,15 +234,13 @@ h1, h2, h3, h4, p, figure {
         grid-column: 1/4;
         grid-row: 2;
         align-self: flex-end;
-       
         padding: 0 20px 20px 0;
        
     }
     .about-body-text {
         grid-column: 1;
         grid-row: 3;
-        padding: 0;
-        padding: 0 20px 20px 0;
+        padding: 0 40px 0 0;
     }
     .about-body-text p {
         padding: 0;

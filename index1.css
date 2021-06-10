@@ -116,9 +116,8 @@ h1, h2, h3, h4, p {
     display: block;
     background-color: rgb(43, 40, 40);
     color: white;
-    padding: 80px 20px;
+    padding: 100px 20px;
     margin-top: 69px; 
-    /* background-image: url("Abstract\ Background\ V3_1.svg"); */
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("Abstract\ Background\ V3_1.svg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,6 +132,8 @@ h1, h2, h3, h4, p {
     padding: 50px 20px;
     font-size: 16px;
     color: gray; 
+    background: whitesmoke;
+
     
    
 }
@@ -153,11 +154,6 @@ h1, h2, h3, h4, p {
 /* ------------------------ROW-2 */
 .offer {
     background-color:  rgb(43, 40, 40);
-    /* background-image: url("Abstract\ Background\ V3_1.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-   
     font-weight: 600;
     color: white;
     padding: 40px 20px;
@@ -278,8 +274,8 @@ footer {
   /* ---------------------------------------------------------tablets and large screen phones */
   @media screen and (min-width:  600px) {
     .active img { height: auto; width: 250px;}
-    .cover {padding: 180px 20px;}
-    .cover h1 {font-size: 60px;}
+    .cover {padding: 280px 20px;}
+    .cover h1 {font-size: 70px;}
     .about h2 {font-size: 40px;}
     .about {font-size: 20px;}
     .offer h3 {font-size: 40px;}
@@ -297,18 +293,12 @@ footer {
  /* ---------------------------------------------------------desktop devices */
 @media screen and (min-width:  1023px) {
     .about {
-        
-        /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url("brick-2000.jpg");
-        background-attachment: fixed; */
-        background-image:  url("idea.JPG");
+        /* background-image:  url("idea.JPG"); */
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
     }
-    .about h2 {
-       
-        padding-bottom: 20px;
-    }
+    .about h2 {padding-bottom: 20px;}
     .about-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
