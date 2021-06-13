@@ -150,54 +150,44 @@ input {
 select {
     padding: 5px 0;
     font-size: 18px;
+    
 }
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+} 
+  
+/* Style the submit button */
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+form {padding: 20px;}
+h2 {font-size: 30px;}
+p {font-size: 16px;}
+
 .contact-us-form-container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(214, 215, 216, 0.3));
 }
-
-.contact-us-form-title { 
-    padding: 20px 0;
-   
-}
-.contact-us-form-title h2 { 
-    font-size: 40px;
-}
-.contact-us-form-title p { 
-    font-size: 20px; 
-}
-
-.form-field-company-label {
-
-    padding-top: 15px;
-}
-
-.form-field-email-label {
-    
-    padding-top: 15px;
-}
-
-.form-field-service-list-label {
-  
-    padding-top: 15px;
-}
-
-.form-field-free-text-label {
-
-    padding-top: 15px;
-}
-.form-field-free-text-input {
-    grid-column: 2;
-    grid-row: 10;
-  
-    
-}
-.form-field-button {
-    grid-column: 2;
-    grid-row: 11;
-}
-
+.contact-us-form-title { padding: 20px 20px 0 20px;}
 /* ---------------------------------------------FOOTER-SECTION */
 
 .footer-section {
@@ -262,7 +252,7 @@ footer {
   /* ---------------------------------------------------------tablets and large screen phones */
   @media screen and (min-width:  600px) {
     .active img { height: auto; width: 250px;}
-    .cover {padding: 280px 20px;}
+    .cover {padding: 180px 20px;}
     .cover h1 {font-size: 70px;}
     
     .footer-container {
@@ -274,75 +264,10 @@ footer {
 
  /* ---------------------------------------------------------desktop devices */
 @media screen and (min-width:  1023px) {
+
     .contact-us-form-container {
-        flex-direction: row;
-    } 
-    .contact-us-form-title { 
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 70px 50px 0; 
-       
-    }
-    .contact-us-form-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto;
-    }
-    
-   
-    .form-field-name-label {
-        grid-column: 2;
-        grid-row: 1;
-       
-    }
-    .form-field-name-input {
-        grid-column: 2;
-        grid-row: 2;
-        
-    }
-    .form-field-company-label {
-        grid-column: 2;
-        grid-row: 3;
-        
-    }
-    .form-field-company-input {
-        grid-column: 2;
-        grid-row: 4;
-    }
-    .form-field-email-label {
-        grid-column: 2;
-        grid-row: 5;
-       
-    }
-    .form-field-email-input {
-        grid-column: 2;
-        grid-row: 6;
-    }
-    .form-field-service-list-label {
-        grid-column: 2;
-        grid-row: 7;
-       
-    }
-    .form-field-service-list-input {
-        grid-column: 2;
-        grid-row: 8;
-    }
-    .form-field-free-text-label {
-        grid-column: 2;
-        grid-row: 9;
-        
-    }
-    .form-field-free-text-input {
-        grid-column: 2;
-        grid-row: 10;
-      
-        
-    }
-    .form-field-button {
-        grid-column: 2;
-        grid-row: 11;
+        align-items: center;
     }
 
-   
 }
